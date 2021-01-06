@@ -21,6 +21,45 @@
 - Naming rules were different in the past
 - Modern powerful PCs and managed languages with metadata make us able to develop very powerful IDEs which endow us by great power
 ## General Principle of Naming
+- Intention-Revealing Names
+- Disinformative Names
+- Use Easily Readable Names
+- No Encodings
+```
+# Bad code
+i_age, i_count
+```
+- No Jokes! Code is not a place for jokes!!!
+- Use Programming Terms
+```
+[CustomerBuilder] is good name since a reader knows it is implemented via the "Builder" pattern.
+[CustomerFactory] implies that it is implemented via the "Factory" pattern
+```
+
+- Use Names from the Problem Domain
+- Use Symmetry
+```
+begin/end
+first/end
+locked/unlocked
+min/max
+next/previous
+old/new
+opend/closed
+visible/invisible
+source/target
+source/destination
+up/down
+```
+
+- Names of Classes
+-- Rule: "A name of a class should be a noun"
+-- Examples: Customer, Painter, DateTimeParser
+-- Avoid: Manager, Data, Info, CustomerData
+- Names of Functions
+-- TODO:::::
+
+
 ## Naming Conventions in the .NET framework
 There are two ways of naming any API members in .NET:
 PascalCasing, camelCasing and Underscore Prefix
