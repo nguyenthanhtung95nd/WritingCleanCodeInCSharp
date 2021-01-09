@@ -20,45 +20,46 @@
 - Correct naming is extremely important form the perspective of readability and as a consequence from the perspectice of maintenance
 - Naming rules were different in the past
 - Modern powerful PCs and managed languages with metadata make us able to develop very powerful IDEs which endow us by great power
+
 ## General Principle of Naming
 - Intention-Revealing Names
 - Disinformative Names
 - Use Easily Readable Names
 - No Encodings
-```
-# Bad code
-i_age, i_count
-```
-- No Jokes! Code is not a place for jokes!!!
-- Use Programming Terms
-```
-[CustomerBuilder] is good name since a reader knows it is implemented via the "Builder" pattern.
-[CustomerFactory] implies that it is implemented via the "Factory" pattern
-```
+    ```
+    # Bad code
+    i_age, i_count
+    ```
+    - No Jokes! Code is not a place for jokes!!!
+    - Use Programming Terms
+    ```
+    [CustomerBuilder] is good name since a reader knows it is implemented via the "Builder" pattern.
+    [CustomerFactory] implies that it is implemented via the "Factory" pattern
+    ```
 
 - Use Names from the Problem Domain
 - Use Symmetry
-```
-begin/end
-first/end
-locked/unlocked
-min/max
-next/previous
-old/new
-opend/closed
-visible/invisible
-source/target
-source/destination
-up/down
-```
-
+    ```
+    begin/end
+    first/end
+    locked/unlocked
+    min/max
+    next/previous
+    old/new
+    opend/closed
+    visible/invisible
+    source/target
+    source/destination
+    up/down
+    ```
 - Names of Classes
--- Rule: "A name of a class should be a noun"
--- Examples: Customer, Painter, DateTimeParser
--- Avoid: Manager, Data, Info, CustomerData
+  1. Rule: "A name of a class should be a noun"
+  2. Examples: Customer, Painter, DateTimeParser
+  3. Avoid: Manager, Data, Info, CustomerData
 - Names of Functions
--- TODO:::::
-
+  1. Rule: "A name of a function should be a verb"
+  2. Examples: GetCustomer, Loaded, bool CanRedirect
+  3. Boolean parameters: isCorrect, isBusy, CanExtract
 
 ## Naming Conventions in the .NET framework
 There are two ways of naming any API members in .NET:
@@ -108,16 +109,14 @@ private int _salary = 100;
   3) Do not use an "Enum" suffix in enum type names.
   4) Do not use "Flag" or "Flags" suffixes in enum type names.
   5) Do not use a prefix on enumeration value names.  
- 
-```sh
-enum MailType  
-{  
-   Html,  
-   PlainText,  
-   Attachment  
-}  
-```
-
+      ```sh
+      enum MailType  
+      {  
+        Html,  
+        PlainText,  
+        Attachment  
+      }  
+    ```
 * Naming Events: Events are associated with actions. Therefore, events are named with verbs. For example, Loaded, Clicked, and Printing.
   1) Give events names with a concept of before, current, and after, using the present and past tenses. Depending on the page, window, control, or class, the event names for a page can be, Initialized, PreRender, Rendering, PostRender, and Exited. A button event can be OnClick.
   2) Event handlers use "EventHandler" suffix, as shown in the following example:
@@ -125,14 +124,15 @@ enum MailType
   4) Use two parameters named sender and e in event handlers.
   5) Name event argument classes with the "EventArgs" suffix. 
 
-```sh
-event EventHandler StatusChanged;
-event EventHandler Closing;
-```
+      ```sh
+      event EventHandler StatusChanged;
+      event EventHandler Closing;
+      ```
 
-* Naming Constants: Constants should have onlu the first letter uppercased
+* Naming Constants: Constants should have only the first letter uppercase
 
-```sh
-public static int Age;
-public const int Max = 100; 
-```
+    ```sh
+    public static int Age;
+    public const int Max = 100; 
+    ```
+# Writing Clean Functions / Method
