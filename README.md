@@ -162,3 +162,18 @@ their correct external usage.
 -	**switch-case statements must have a default treatment:** Since the switch-case
 statement may receive an entrance variable unknown in some cases, the default
 treatment will guarantee that the code will not break in such a situation.
+
+# Should and shouldn't be in writing code
+-	**DO** write your code in English.
+-	**DO** follow C# coding standards with CamelCase.
+-	**DO** write classes, methods, and variables with understandable names.
+-	**DO** comment public classes, methods, and properties.
+-	**DO** use the using statement whenever possible.
+-	**DO** use async implementation whenever possible.
+-	**DO** ask for authorization before implementing unmanaged code.
+-	**DO** ask for authorization before implementing threads
+-	**DON'T** write empty try-catch statements.
+-	**DON'T** write methods with more than a score of 10 of cyclomatic complexity.
+-	**DOxN'T** use break and continue inside for/while/do-while/foreach
+statements.
+-	**DON'T** use goto statements.
