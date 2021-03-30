@@ -136,7 +136,31 @@ private int _salary = 100;
     public const int Max = 100; 
     ```
 # Writing Clean Functions / Method
-**TODO Update**
+* **Functional programming** is a software coding methodology that treats
+computations as the mathematical evaluation of computations that does not modify state.*
+## Keeping methods small
+> > While programming clean and readable code, it is important to keep the methods small.
+Preferably, in the C# world, it is best to keep methods under 10 lines long. The perfect length is no more than 4 lines. A good way to keep methods small is to consider if you should be trapping for errors or bubbling them further up the call stack. With defensive
+programming, you can become a little too defensive, and this can add to the amount of code you find yourself writing. Besides, methods that trap errors will be longer than methods that don't.
+
+## Indenting code
+> > A very long method is hard to read and follow at the best of times, especially when you
+have to scroll through the method many times to get to the bottom of it. But having to do
+that with methods that are not properly formatted with the correct levels of indentation can be a real nightmare.
+
+## Avoiding duplication
+1.	You should avoid duplicate code. It is not a productive way to program, can make programs unnecessarily large, and has the propensity to proliferate the same exception throughout your codebase.
+2.	Code can be either DRY or WET. WET code stands for Write Every Time and is the opposite of DRY, which stands for Don't Repeat Yourself.
+3.	DRY code is the opposite of WET in that code is only ever written once and is reused wherever it is needed. This reduces the code base and exception footprint, thus making programs easier to read and maintain.
+4.	You DRY out WET code by removing duplicate code using refactoring.
+
+## Avoiding multiple parameters
+> > Should aim to keep the number of parameters to a minimum (preferably less than three).
+> > 
+## Implementing Single Responsibility Principle (SRP)
+> > All objects and methods that you write should, at most, have one responsibility and no more. Objects can have multiple methods, but those methods, when combined, should all work toward the single purpose of the object they belong to. Methods can call multiple
+methods, where each does different things. But the method itself should only do one thing.
+
 # .NET Core tips and tricks for coding
 -	**Classes, methods, and variables should have understandable names:** The name
 should explain everything the reader needs to know. There should be no need for an explanatory comment.
