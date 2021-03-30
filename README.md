@@ -136,3 +136,29 @@ private int _salary = 100;
     public const int Max = 100; 
     ```
 # Writing Clean Functions / Method
+**TODO Update**
+# .NET Core tips and tricks for coding
+-	**Classes, methods, and variables should have understandable names:** The name
+should explain everything the reader needs to know. There should be no need for an explanatory comment.
+-	**Methods cannot have high complexity levels:** Cyclomatic complexity should be
+checked so that methods do not have too many lines of code.
+-	**Duplicate code should be avoided:** There is no reason for having duplicate code
+in a high-level programming language like C#.
+-	**Objects should be checked before usage:** Since null objects can exist, the code
+must have null-type checking.
+-	**Constants and enumerators should be used:** A good way for avoiding magic
+numbers and text inside code is transforming this information into constants and
+enumerators, which generally are more understandable.
+-	**Unsafe code should be avoided:** Unless there is no other way to implement
+code, unsafe code should be avoided.
+-	**try-catch statements cannot be empty:** There is no reason for a try-catch
+statement without treatment in the catch area.
+-	**try-finally/using statements should always be used:** Even for objects where
+Garbage Collector will take care of the disposed-of object, consider disposing of
+objects that you were responsible for creating yourself.
+-	**At least public methods should be commented:** Considering that public
+methods are the ones used outside your library, they have to be explained for
+their correct external usage.
+-	**switch-case statements must have a default treatment:** Since the switch-case
+statement may receive an entrance variable unknown in some cases, the default
+treatment will guarantee that the code will not break in such a situation.
