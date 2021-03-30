@@ -174,6 +174,6 @@ treatment will guarantee that the code will not break in such a situation.
 -	**DO** ask for authorization before implementing threads
 -	**DON'T** write empty try-catch statements.
 -	**DON'T** write methods with more than a score of 10 of cyclomatic complexity.
--	**DOxN'T** use break and continue inside for/while/do-while/foreach
+-	**DON'T** use break and continue inside for/while/do-while/foreach
 statements.
 -	**DON'T** use goto statements.
