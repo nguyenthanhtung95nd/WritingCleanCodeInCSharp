@@ -201,3 +201,23 @@ treatment will guarantee that the code will not break in such a situation.
 -	**DON'T** use break and continue inside for/while/do-while/foreach
 statements.
 -	**DON'T** use goto statements.
+
+# Some general rules when implementing task.
+## Code
+- Compile without errors and warnings and run page successfully
+- No error in browser console log
+- Ensure that the code match the requirements/stories
+- Use comment when necessary
+- Check for possible null references
+- Fix all resharper recommendation (with consideration)
+- Fix all sonarlint recommendation (with consideration)
+- The code is well formatted using Visual Studio
+## Unit Test
+- Unit Test is FIRST
+- All Unit Tests are passed
+- Should cover all business logics
+- Add Unit Test for the code changes
+- Unit Test follows AAA and method names convention
+- All test properties should have different values and not default value
+## Git
+- Meaningful comment when commit
